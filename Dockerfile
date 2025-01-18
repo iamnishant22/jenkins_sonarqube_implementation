@@ -1,4 +1,5 @@
-FROM nginx
+
+FROM nginx:1.21.6
 
 # Create a non-root user and group
 RUN addgroup -g 1000 appgroup && adduser -u 1000 -G appgroup -h /home/appuser -s /bin/sh -D appuser
