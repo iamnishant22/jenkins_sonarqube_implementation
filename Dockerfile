@@ -1,4 +1,4 @@
-
+# Use a specific version of Nginx image
 FROM nginx:1.21.6
 
 # Create a non-root user and group
@@ -6,6 +6,8 @@ RUN addgroup -g 1000 appgroup && adduser -u 1000 -G appgroup -h /home/appuser -s
 
 # Copy the application files and set permissions
 COPY . /usr/share/nginx/html/
+
+# Change ownership of the files to the non-root user
 RUN chown -R appuser:appgroup /usr/share/nginx/html
 
 # Switch to the non-root user
