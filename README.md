@@ -1,4 +1,6 @@
 **Introduction**
+
+
 In modern software development, Continuous Integration (CI) and Continuous Deployment (CD) pipelines are essential for automating the process of integrating code changes, running tests, and deploying applications. This project focuses on implementing a robust Jenkins CI/CD pipeline incorporating key tools like SonarQube for code quality analysis, Docker for containerization, and GitHub Webhooks for automated triggering, all deployed on AWS infrastructure.
 
 The pipeline is set up across three EC2 instances on AWS, each dedicated to a specific component:
